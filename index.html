@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="description" content="Gulf Aquaculture company profile — transforming aquaculture in the Middle East." />
   <title>Gulf Aquaculture — Company Profile</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,12 +15,8 @@
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#top" data-bind="brand">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">
-          <strong>Gulf Aquaculture</strong>
-          <span>Company Profile</span>
-        </span>
+      <a class="brand" href="#top" aria-label="Gulf Aquaculture home">
+        <img src="assets/img/logo.png" alt="Gulf Aquaculture" width="220" height="52" />
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="nav" aria-label="Primary"></nav>
@@ -44,14 +43,18 @@
           <div>
             <div class="eyebrow" data-bind="purpose.eyebrow"></div>
             <h2>Purpose &amp; vision</h2>
-            <p class="lead" data-bind="purpose.lead"></p>
-            <div class="responsibility" data-bind="purpose.responsibility"></div>
+            <div class="ochre-box" data-bind="purpose.lead"></div>
+            <div class="ochre-ribbons" aria-label="Responsibility">
+              <span>This isn’t just a job.</span>
+              <span>It’s a responsibility</span>
+              <span>to the Gulf.</span>
+            </div>
           </div>
           <aside class="panel panel-dark">
             <div class="eyebrow" data-bind="purpose.visionLabel"></div>
             <p class="vision-script" data-bind="purpose.vision"></p>
             <div class="eyebrow" data-bind="challenge.eyebrow"></div>
-            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;margin:0 0 .8rem;color:#fbf7f0;" data-bind="challenge.title"></h3>
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;margin:0 0 .8rem;color:#ffffff;" data-bind="challenge.title"></h3>
             <div class="prose" id="challenge-body"></div>
           </aside>
         </div>
@@ -66,7 +69,7 @@
       </div>
     </section>
 
-    <section id="story" class="section-sand">
+    <section id="story" class="section-band">
       <div class="wrap">
         <div class="eyebrow" data-bind="story.eyebrow"></div>
         <h2 data-bind="story.title"></h2>
@@ -114,7 +117,7 @@
       </div>
     </section>
 
-    <section id="assets" class="section-ivory">
+    <section id="assets" class="section-alt">
       <div class="wrap">
         <div class="eyebrow" data-bind="assets.eyebrow"></div>
         <h2>Facilities that support fish — and people</h2>
@@ -171,7 +174,7 @@
       </div>
     </section>
 
-    <section id="team" class="section-sand">
+    <section id="team" class="section-band">
       <div class="wrap">
         <div class="eyebrow" data-bind="team.eyebrow"></div>
         <h2>People</h2>
@@ -249,6 +252,7 @@
           </div>
         </div>
         <div class="closing">
+          <img src="assets/img/logo-light.png" alt="" width="200" height="47" style="margin:0 auto 1.1rem;height:44px;width:auto;" aria-hidden="true" />
           <p data-bind="contact.closing"></p>
           <p style="font-family:Inter,sans-serif;font-size:1rem;letter-spacing:.04em;" data-bind="contact.cta"></p>
           <p style="margin:0;">
@@ -263,10 +267,12 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <div>
-        <strong id="footer-rights"></strong>
-        <span aria-hidden="true"> · </span>
-        <span id="footer-attr"></span>
+      <div class="footer-brand">
+        <img src="assets/img/logo.png" alt="Gulf Aquaculture" width="180" height="42" />
+        <div class="footer-meta">
+          <strong id="footer-rights"></strong>
+          <span id="footer-attr"></span>
+        </div>
       </div>
       <div>
         <a href="mailto:info@gulfaquaculture.com">info@gulfaquaculture.com</a>

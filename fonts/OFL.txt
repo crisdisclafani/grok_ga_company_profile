@@ -1,2 +1,5 @@
-These fonts are licensed under the SIL Open Font License, Version 1.1.
-Cormorant Garamond and Inter — see https://scripts.sil.org/OFL
+Fonts licensed under the SIL Open Font License, Version 1.1.
+- Cormorant Garamond
+- Inter
+- Poppins
+See https://scripts.sil.org/OFL
