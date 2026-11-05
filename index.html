@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Gulf Aquaculture company profile — transforming aquaculture in the Middle East." />
+  <title>Gulf Aquaculture — Company Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" data-bind="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Gulf Aquaculture</strong>
+          <span>Company Profile</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav" aria-label="Primary"></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-media" role="img" aria-label="Aquaculture sea cages in Gulf waters"></div>
+      <div class="wrap hero-content">
+        <div class="hero-kicker" data-bind="hero.kicker"></div>
+        <h1 data-bind="hero.title"></h1>
+        <p class="hero-sub" data-bind="hero.subtitle"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-bind-href="hero.ctaPrimary.href" data-bind="hero.ctaPrimary.label"></a>
+          <a class="btn btn-ghost" data-bind-href="hero.ctaSecondary.href" data-bind="hero.ctaSecondary.label"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="purpose">
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <div class="eyebrow" data-bind="purpose.eyebrow"></div>
+            <h2>Purpose &amp; vision</h2>
+            <p class="lead" data-bind="purpose.lead"></p>
+            <div class="responsibility" data-bind="purpose.responsibility"></div>
+          </div>
+          <aside class="panel panel-dark">
+            <div class="eyebrow" data-bind="purpose.visionLabel"></div>
+            <p class="vision-script" data-bind="purpose.vision"></p>
+            <div class="eyebrow" data-bind="challenge.eyebrow"></div>
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;margin:0 0 .8rem;color:#fbf7f0;" data-bind="challenge.title"></h3>
+            <div class="prose" id="challenge-body"></div>
+          </aside>
+        </div>
+
+        <div style="margin-top:3rem;">
+          <div class="eyebrow" data-bind="pillars.eyebrow"></div>
+          <h2 data-bind="pillars.title"></h2>
+          <p class="lead" data-bind="pillars.intro"></p>
+          <div class="pillar-grid" id="pillars"></div>
+          <div class="callout" data-bind="pillars.callout"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="section-sand">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="story.eyebrow"></div>
+        <h2 data-bind="story.title"></h2>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section class="section-dark" id="mission">
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <div class="eyebrow" data-bind="story.missionLabel"></div>
+            <p class="vision-script" data-bind="story.mission"></p>
+            <div class="role-banner" data-bind="story.role"></div>
+          </div>
+          <div>
+            <div class="eyebrow" data-bind="story.principlesLabel"></div>
+            <h2 style="font-size:clamp(1.8rem,3vw,2.4rem);">Our principles</h2>
+            <ol class="principles" id="principles"></ol>
+          </div>
+        </div>
+        <div class="impact-grid" id="impact"></div>
+      </div>
+    </section>
+
+    <section id="operations">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="operations.eyebrow"></div>
+        <h2 data-bind="operations.title"></h2>
+        <p class="lead" data-bind="operations.intro"></p>
+        <p class="responsibility" data-bind="operations.quote"></p>
+        <div class="cap-grid" id="capabilities"></div>
+        <p class="lead" style="margin-top:1.5rem;" data-bind="operations.cycleNote"></p>
+        <p class="callout" data-bind="operations.modular"></p>
+        <div class="ops-visual">
+          <figure>
+            <img src="assets/img/sea-cages.jpg" alt="Sea cages used in Gulf Aquaculture grow-out operations" loading="lazy" />
+            <figcaption>Sea cage grow-out — natural light and flow, low stocking densities</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/ops-banner.jpg" alt="Operational imagery from hatchery and nursery environments" loading="lazy" />
+            <figcaption>Hatchery &amp; nursery systems designed for Gulf conditions</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="assets" class="section-ivory">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="assets.eyebrow"></div>
+        <h2>Facilities that support fish — and people</h2>
+        <div class="asset-tabs" role="tablist" aria-label="Assets" id="asset-tabs"></div>
+        <div id="asset-panels"></div>
+      </div>
+    </section>
+
+    <section id="perspective" class="section-dark">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="interview.eyebrow"></div>
+        <h2 data-bind="interview.title"></h2>
+        <p class="lead" data-bind="interview.subtitle"></p>
+        <div class="interview-layout" style="margin-top:2rem;">
+          <aside class="interview-aside">
+            <p class="quote-xl" data-bind="interview.quote"></p>
+            <img src="assets/img/platform-sunset.jpg" alt="Team on aquaculture platform at sunset" loading="lazy" />
+            <div class="aside-quote" data-bind="interview.aside"></div>
+          </aside>
+          <div class="qa" id="qa"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="species">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="species.eyebrow"></div>
+        <h2 data-bind="species.title"></h2>
+        <p class="lead" data-bind="species.intro"></p>
+        <p class="responsibility" data-bind="species.philosophy"></p>
+        <div class="species-grid" id="species-core"></div>
+        <div class="two-col">
+          <div class="panel">
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.6rem;margin:0 0 .6rem;color:var(--navy);" data-bind="species.knowledgeTitle"></h3>
+            <p style="color:var(--muted);margin:0;" data-bind="species.knowledge"></p>
+            <ul class="check-list" id="species-adv"></ul>
+          </div>
+          <div class="panel">
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.6rem;margin:0 0 .6rem;color:var(--navy);" data-bind="species.specificityTitle"></h3>
+            <ul class="check-list" id="species-spec"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ownership" class="section-dark">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="ownership.eyebrow"></div>
+        <h2 data-bind="ownership.title"></h2>
+        <p class="lead" data-bind="ownership.intro"></p>
+        <p class="lead"><span class="placeholder">Placeholder</span> <span data-bind="ownership.note"></span></p>
+        <div class="owner-grid" id="owners"></div>
+        <p class="role-banner" data-bind="ownership.tagline"></p>
+      </div>
+    </section>
+
+    <section id="team" class="section-sand">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="team.eyebrow"></div>
+        <h2>People</h2>
+        <p class="lead" data-bind="team.intro"></p>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+
+    <section id="network">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="network.eyebrow"></div>
+        <h2 data-bind="network.title"></h2>
+        <div class="place-grid" id="places"></div>
+      </div>
+    </section>
+
+    <section id="growth" class="section-dark">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="growth.eyebrow"></div>
+        <h2 data-bind="growth.title"></h2>
+        <p class="lead" data-bind="growth.intro"></p>
+        <div class="growth-grid" id="growth-pillars"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="eyebrow" data-bind="contact.eyebrow"></div>
+        <h2 data-bind="contact.title"></h2>
+        <p class="lead" data-bind="contact.body"></p>
+        <div class="contact-grid" style="margin-top:2rem;">
+          <div class="contact-card">
+            <ul class="contact-list">
+              <li>
+                <span>Email</span>
+                <a id="contact-email" href="#"></a>
+              </li>
+              <li>
+                <span>Website</span>
+                <a id="contact-web" href="#" target="_blank" rel="noopener"></a>
+              </li>
+              <li>
+                <span>Head Office</span>
+                <div id="contact-office"></div>
+              </li>
+              <li>
+                <span id="contact-aum-label"></span>
+                <div id="contact-aum"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-card">
+            <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.6rem;margin:0 0 .4rem;color:var(--navy);" data-bind="form.title"></h3>
+            <p class="form-note" data-bind="form.note"></p>
+            <form class="form" id="enquiry-form" novalidate>
+              <label>Name
+                <input name="name" type="text" autocomplete="name" required placeholder="Your name" />
+              </label>
+              <label>Email
+                <input name="email" type="email" autocomplete="email" required placeholder="you@organisation.com" />
+              </label>
+              <label>Organisation
+                <input name="org" type="text" autocomplete="organization" placeholder="Optional" />
+              </label>
+              <fieldset style="border:0;padding:0;margin:0;">
+                <legend style="font-size:.9rem;color:var(--navy);font-weight:600;margin-bottom:.45rem;">I’m interested in</legend>
+                <div class="checks" id="interest-checks"></div>
+              </fieldset>
+              <label>Message
+                <textarea name="message" rows="4" required placeholder="How can we help?"></textarea>
+              </label>
+              <button class="btn btn-navy" type="submit">Submit enquiry</button>
+              <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+        <div class="closing">
+          <p data-bind="contact.closing"></p>
+          <p style="font-family:Inter,sans-serif;font-size:1rem;letter-spacing:.04em;" data-bind="contact.cta"></p>
+          <p style="margin:0;">
+            <a id="closing-mail" href="#"></a>
+            ·
+            <a id="closing-web" href="#" target="_blank" rel="noopener"></a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong id="footer-rights"></strong>
+        <span aria-hidden="true"> · </span>
+        <span id="footer-attr"></span>
+      </div>
+      <div>
+        <a href="mailto:info@gulfaquaculture.com">info@gulfaquaculture.com</a>
+        <span aria-hidden="true"> · </span>
+        <a href="https://gulfaquaculture.com" target="_blank" rel="noopener">gulfaquaculture.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
